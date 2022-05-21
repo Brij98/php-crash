@@ -44,6 +44,8 @@ echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
 
 // Arithmetic Operators
 
+var_dump('5' + '5');
+
 echo 5 + 5;
 echo 10 - 6;
 echo 5 * 10;
@@ -54,3 +56,5 @@ define('HOST', 'localhost');
 define('USER', 'root');
 
 var_dump(HOST);
+echo HOST;
+print_r(HOST);

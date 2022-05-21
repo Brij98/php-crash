@@ -6,12 +6,13 @@
 */
 
 if (isset($_POST['submit'])) {
-  // echo '<h3>' . $GET['username'] . '</h3>';
+  // echo '<h3>' . $_GET['username'] . '</h3>';
   echo '<h3>' . $_POST['username'] . '</h3>';
+  echo '<h3>' . $_POST['password'] . '</h3>';
 } ?>
 
 <!-- Pass data through a link -->
-<a href="<?php echo $_SERVER['PHP_SELF']; ?>?username=Brad">Link</a>
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?username=kom">Click</a>
 
 
 <br><br>
@@ -20,7 +21,7 @@ if (isset($_POST['submit'])) {
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 <div>
   <label>Name: </label>
-  <input type="text" name="name">
+  <input type="text" name="username">
 </div>
 <br>
 <div>

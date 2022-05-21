@@ -39,6 +39,7 @@
     <li>Client Info: <?php echo $_SERVER['HTTP_USER_AGENT']; ?></li>
     <li>Remote Address: <?php echo $_SERVER['REMOTE_ADDR']; ?></li>
     <li>Remote Port: <?php echo $_SERVER['REMOTE_PORT']; ?></li>
+    <li>Php Self:: <?php echo $_SERVER['PHP_SELF']; ?></li>
   </ul>
 </body>
 </html>

@@ -39,19 +39,20 @@ class User {
 
   // Destructor is called when an object is destroyed or the end of the script.
   function __destruct() {
-    echo "The user name is {$this->name}.";
+    echo "The user name is {$this->name}.".'<br/>';
   }
 }
 
 // Instantiate a new user
 $user1 = new User('Brad', 'brad@gmail.com', '123456');
-echo $user1->getName();
-echo $user1->login();
+echo $user1->getName().'<br/>';
+echo $user1->login().'<br/>';
 
 // Add a value to a property
 // $user1->name = 'Brad';
 
 var_dump($user1);
+echo "<br/>";
 // echo $user1->name;
 
 /* ----------- Inheritence ---------- */
@@ -62,6 +63,7 @@ var_dump($user1);
 */
 
 class employee extends User {
+  private $title;
   public function __construct($name, $email, $password, $title) {
     parent::__construct($name, $email, $password);
     $this->title = $title;
@@ -73,4 +75,4 @@ class employee extends User {
 }
 
 $employee1 = new employee('John','johndoe@gmail.com','123456','Manager');
-echo $employee1->getTitle();
+echo $employee1->getTitle().'<br/>';

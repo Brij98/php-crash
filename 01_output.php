@@ -9,15 +9,17 @@ echo '<h1>Hello</h1>';
 
 // print - Similar to echo, but a bit slower
 print 'Hello';
-
+echo "<br />\n";  // creating new line
 // print_r - Gives a bit more info. Can be used to print arrays
 print_r('Hello');
+echo "<br />\n";   // creating new line
 print_r([1, 2, 3]);
-
+echo "<br />\n";  // creating new line
 // var_dump - Even more info like data type and length
 var_dump('Hello');
-var_dump([1, 2, 3]);
-
+echo "<br />\n";  // creating new line
+var_dump([1, 2.4, 3]);
+echo "<br />\n";  // creating new line
 // Escaping characters with a backslash
 echo "Is your name O\'reilly?";
 

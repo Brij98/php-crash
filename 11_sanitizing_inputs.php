@@ -34,12 +34,13 @@ if (isset($_POST['submit'])) {
 <form action="<?php echo htmlspecialchars(
   $_SERVER['PHP_SELF']
 ); ?>" method="POST">
+<?php if(isset($_POST['submit'])){echo $name;} ?>
 <div>
   <label>Name: </label>
   <input type="text" name="name">
 </div>
 <br>
-<?php echo $email; ?>
+<?php if(isset($_POST['submit'])){echo $email;} ?>
 <div>
 <label>Email: </label>
   <input type="email" name="email">
